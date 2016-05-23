@@ -1,0 +1,201 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Feb 7, 2016, 2:42:55 PM
+    Author     : Hasitha Prabhath Gamage
+*/
+
+.header__logo a {
+    margin-left: -9px;
+}
+
+/*
+* Datatable styles
+*/
+.dataTables_wrapper .dataTables_length {
+    display: none;
+}
+
+.dataTables_filter input {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 8px 15px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/*
+* Image holder in image preview page
+*/
+
+.vehicle-img-holder {
+  height: 200px;
+}
+
+.zoomify-img-holder {
+  width: 320px;
+  height: 200px;
+  float: left;
+  margin: 15px 10px 10px 10px;
+  -webkit-box-shadow: 10px 7px 10px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 7px 10px -5px rgba(0,0,0,0.75);
+  box-shadow: 10px 7px 10px -5px rgba(0,0,0,0.75);
+
+}
+
+.zoomify-img {
+    height: 100%;
+    width: 100%;
+}
+
+/*
+* Upload button
+*/
+
+.upload-btn-holder {
+  margin-top: 20px;
+}
+
+/*
+* Custom error message
+*/
+
+.error-alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.error-alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 80%;
+}
+
+/*
+* Vehicle info page data header
+*/
+
+.vehicle-data-holder {
+    border-top: 1px solid #b7b7b7;
+    border-bottom: 1px solid #b7b7b7;
+    margin-bottom: 12px;
+    padding-top: 10px;
+}
+
+/*
+* Go to top button
+*/
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #4ab9cf url("images/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+a:hover.back-to-top {
+	background-color: #13879E;
+}
+
+.trackForm select {
+  width: 80%;
+}
+
+.ctrl-btn {
+  padding: 0px 6px !important;
+  height: 23px !important;
+  line-height: 23px !important;
+}
+
+.device-icon-holder {
+  width: 50%;
+}
+
+
+/* Switch */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
